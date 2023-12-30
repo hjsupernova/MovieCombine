@@ -53,6 +53,11 @@
 			children = (
 				CEB3EC462B4001510068F4B7 /* MovieCombineApp.swift */,
 				CEB3EC482B4001510068F4B7 /* ContentView.swift */,
+				CEB3EC542B40069C0068F4B7 /* Core */,
+				CEB3EC582B40070E0068F4B7 /* Extensions */,
+				CEB3EC552B4006A50068F4B7 /* Models */,
+				CEB3EC562B4006B90068F4B7 /* Services */,
+				CEB3EC572B4006C10068F4B7 /* Utilities */,
 				CEB3EC4A2B4001530068F4B7 /* Assets.xcassets */,
 				CEB3EC4C2B4001530068F4B7 /* Preview Content */,
 			);
@@ -65,6 +70,49 @@
 				CEB3EC4D2B4001530068F4B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEB3EC542B40069C0068F4B7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3EC592B4007670068F4B7 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEB3EC552B4006A50068F4B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEB3EC562B4006B90068F4B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEB3EC572B4006C10068F4B7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEB3EC582B40070E0068F4B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEB3EC592B4007670068F4B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
