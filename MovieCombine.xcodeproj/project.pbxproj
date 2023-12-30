@@ -11,6 +11,12 @@
 		CEB3EC492B4001510068F4B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC482B4001510068F4B7 /* ContentView.swift */; };
 		CEB3EC4B2B4001530068F4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3EC4A2B4001530068F4B7 /* Assets.xcassets */; };
 		CEB3EC4E2B4001530068F4B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3EC4D2B4001530068F4B7 /* Preview Assets.xcassets */; };
+		CEB3EC5E2B40088E0068F4B7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC5D2B40088E0068F4B7 /* DiscoverView.swift */; };
+		CEB3EC602B40089C0068F4B7 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC5F2B40089C0068F4B7 /* DiscoverViewModel.swift */; };
+		CEB3EC622B4008E80068F4B7 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC612B4008E80068F4B7 /* NetworkingManager.swift */; };
+		CEB3EC642B40140A0068F4B7 /* MoviePageableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC632B40140A0068F4B7 /* MoviePageableList.swift */; };
+		CEB3EC662B4014190068F4B7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC652B4014190068F4B7 /* Movie.swift */; };
+		CEB3EC682B40146A0068F4B7 /* MovieDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC672B40146A0068F4B7 /* MovieDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		CEB3EC482B4001510068F4B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB3EC4A2B4001530068F4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB3EC4D2B4001530068F4B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEB3EC5D2B40088E0068F4B7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		CEB3EC5F2B40089C0068F4B7 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		CEB3EC612B4008E80068F4B7 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		CEB3EC632B40140A0068F4B7 /* MoviePageableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePageableList.swift; sourceTree = "<group>"; };
+		CEB3EC652B4014190068F4B7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CEB3EC672B40146A0068F4B7 /* MovieDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		CEB3EC542B40069C0068F4B7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3EC5A2B4008570068F4B7 /* Discover */,
 				CEB3EC592B4007670068F4B7 /* Components */,
 			);
 			path = Core;
@@ -83,6 +96,8 @@
 		CEB3EC552B4006A50068F4B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3EC632B40140A0068F4B7 /* MoviePageableList.swift */,
+				CEB3EC652B4014190068F4B7 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +105,7 @@
 		CEB3EC562B4006B90068F4B7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3EC672B40146A0068F4B7 /* MovieDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -97,6 +113,7 @@
 		CEB3EC572B4006C10068F4B7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3EC612B4008E80068F4B7 /* NetworkingManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -113,6 +130,31 @@
 			children = (
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CEB3EC5A2B4008570068F4B7 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3EC5B2B4008620068F4B7 /* Views */,
+				CEB3EC5C2B4008670068F4B7 /* ViewModels */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		CEB3EC5B2B4008620068F4B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3EC5D2B40088E0068F4B7 /* DiscoverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEB3EC5C2B4008670068F4B7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3EC5F2B40089C0068F4B7 /* DiscoverViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB3EC662B4014190068F4B7 /* Movie.swift in Sources */,
 				CEB3EC492B4001510068F4B7 /* ContentView.swift in Sources */,
+				CEB3EC602B40089C0068F4B7 /* DiscoverViewModel.swift in Sources */,
 				CEB3EC472B4001510068F4B7 /* MovieCombineApp.swift in Sources */,
+				CEB3EC682B40146A0068F4B7 /* MovieDataService.swift in Sources */,
+				CEB3EC642B40140A0068F4B7 /* MoviePageableList.swift in Sources */,
+				CEB3EC622B4008E80068F4B7 /* NetworkingManager.swift in Sources */,
+				CEB3EC5E2B40088E0068F4B7 /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
