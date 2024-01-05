@@ -13,6 +13,7 @@ class DiscoverViewModel: ObservableObject {
 
     private let movieDataService = MovieDataService()
     private var cancellables = Set<AnyCancellable>()
+    
     init() {
         addSubscribers()
     }

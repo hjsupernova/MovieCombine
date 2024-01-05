@@ -10,6 +10,7 @@ import Foundation
 
 class MovieDataService {
     @Published var popular: [Movie] = []
+
     var movieSubscription: AnyCancellable?
 
     init() {
@@ -27,5 +28,4 @@ class MovieDataService {
                 self?.movieSubscription?.cancel()
             })
     }
-
 }
