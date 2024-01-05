@@ -22,7 +22,6 @@ class DetailViewModel: ObservableObject {
     func addSubscribers() {
         movieDetailService.$recommendations
             .sink { [weak self] returnedRecommendations in
-                print(returnedRecommendations.first ?? "known")
                 self?.recommendations = returnedRecommendations
             }
             .store(in: &cancellables)

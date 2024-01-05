@@ -7,18 +7,6 @@
 
 import SwiftUI
 
-struct DetailLoadingView: View {
-    let movie: Movie?
-
-    var body: some View {
-        ZStack {
-            if let movie = movie {
-                DetailView(movie: movie)
-            }
-        }
-    }
-}
-
 struct DetailView: View {
     @ObservedObject private var detailViewModel: DetailViewModel
 
@@ -35,9 +23,6 @@ struct DetailView: View {
                 VStack {
                     Text(recommendation.title)
                     Text(String(recommendation.id))
-                }
-                .onAppear {
-                    print("Appeared: \(recommendation.title)")
                 }
             }
         }

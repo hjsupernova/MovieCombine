@@ -16,18 +16,13 @@ struct DiscoverView: View {
         NavigationStack {
             List {
                 ForEach(discoverViewModel.popular) { movie in
-                    Text(movie.title)
-                        .onTapGesture {
-                            segue(movie: movie)
-                        }
+                    NavigationLink(movie.title, value: movie)
                 }
             }
             .navigationTitle("Movie")
-            .background(
-                NavigationLink(destination: DetailLoadingView(movie: selectedMovie), isActive: $showDetailView, label: {
-                    EmptyView()
-                })
-            )
+            .navigationDestination(for: Movie.self) { movie in
+                DetailView(movie: movie)
+            }
         }
     }
 
