@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE65B1F92B4809AF00ED7568 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65B1F82B4809AF00ED7568 /* Credits.swift */; };
 		CEB3EC472B4001510068F4B7 /* MovieCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC462B4001510068F4B7 /* MovieCombineApp.swift */; };
 		CEB3EC492B4001510068F4B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC482B4001510068F4B7 /* ContentView.swift */; };
 		CEB3EC4B2B4001530068F4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3EC4A2B4001530068F4B7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE65B1F82B4809AF00ED7568 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 		CEB3EC432B4001510068F4B7 /* MovieCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3EC462B4001510068F4B7 /* MovieCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCombineApp.swift; sourceTree = "<group>"; };
 		CEB3EC482B4001510068F4B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,8 +105,9 @@
 		CEB3EC552B4006A50068F4B7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEB3EC632B40140A0068F4B7 /* MoviePageableList.swift */,
+				CE65B1F82B4809AF00ED7568 /* Credits.swift */,
 				CEB3EC652B4014190068F4B7 /* Movie.swift */,
+				CEB3EC632B40140A0068F4B7 /* MoviePageableList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				CEB3EC622B4008E80068F4B7 /* NetworkingManager.swift in Sources */,
 				CEB3EC5E2B40088E0068F4B7 /* DiscoverView.swift in Sources */,
 				CECA8F6D2B46963B008D2341 /* DetailViewModel.swift in Sources */,
+				CE65B1F92B4809AF00ED7568 /* Credits.swift in Sources */,
 				CECA8F6B2B4695FA008D2341 /* MovieDetailService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

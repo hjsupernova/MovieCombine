@@ -16,13 +16,18 @@ struct DetailView: View {
         self.movie = movie
         detailViewModel = DetailViewModel(movie: movie)
     }
-
+    
     var body: some View {
         List {
-            ForEach(detailViewModel.recommendations) { recommendation in
-                VStack {
+            Section("Recommendations") {
+                ForEach(detailViewModel.recommendations) { recommendation in
                     Text(recommendation.title)
-                    Text(String(recommendation.id))
+                }
+            }
+
+            Section("Cast Members") {
+                ForEach(detailViewModel.castMembers) { castMember in
+                    Text(castMember.name)
                 }
             }
         }

@@ -10,6 +10,7 @@ import Foundation
 
 class DetailViewModel: ObservableObject {
     @Published var recommendations: [Movie] = []
+    @Published var castMembers: [Credits.CastMember] = []
 
     private let movieDetailService: MovieDetailService
     private var cancellables = Set<AnyCancellable>()
@@ -23,6 +24,12 @@ class DetailViewModel: ObservableObject {
         movieDetailService.$recommendations
             .sink { [weak self] returnedRecommendations in
                 self?.recommendations = returnedRecommendations
+            }
+            .store(in: &cancellables)
+
+        movieDetailService.$castMembers
+            .sink { [weak self] returendCastMembers in
+                self?.castMembers = returendCastMembers
             }
             .store(in: &cancellables)
     }
