@@ -11,7 +11,7 @@ import SwiftUI
 struct MovieCombineApp: App {
     var body: some Scene {
         WindowGroup {
-            DiscoverView()
+            MovieTabView()
         }
     }
 }
