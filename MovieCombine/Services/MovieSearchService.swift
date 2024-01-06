@@ -7,14 +7,17 @@
 
 import Combine
 import Foundation
+import OSLog
 
 class MovieSearchService {
     @Published var searchedMovies: [Movie] = []
     
     var movieSearchSubscription: AnyCancellable?
 
+    
     func fetchSearchedMovies(searchText: String) {
-        print("DEBUG: Search Start")
+        Logger.network.info("DEBUG: Fetch Search Start")
+
         guard let url = URL(string: "https://api.themoviedb.org/3/search/movie?query=\(searchText)&page=1&api_key=4516ab9bf50f2aa091aeea5f2f5ca6a5") else { return }
 
         movieSearchSubscription = NetworkingManager.download(url: url)

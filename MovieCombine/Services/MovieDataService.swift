@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import OSLog
 
 class MovieDataService {
     @Published var popular: [Movie] = []
@@ -18,7 +19,7 @@ class MovieDataService {
     }
 
     func fetchPopular() {
-        print("DEBUG: Fetch Popular Start")
+        Logger.network.info("DEBUG: Fetch Popular Start")
         guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=4516ab9bf50f2aa091aeea5f2f5ca6a5") else { return }
 
         movieSubscription = NetworkingManager.download(url: url)

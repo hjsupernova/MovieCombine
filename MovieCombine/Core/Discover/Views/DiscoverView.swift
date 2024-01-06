@@ -9,9 +9,6 @@ import SwiftUI
 
 struct DiscoverView: View {
     @StateObject private var discoverViewModel = DiscoverViewModel()
-    // TODO: 옮기기
-    @State private var showDetailView: Bool = false
-    @State private var selectedMovie: Movie? = nil
 
     var body: some View {
         NavigationStack {
@@ -25,12 +22,6 @@ struct DiscoverView: View {
                 DetailView(movie: movie)
             }
         }
-    }
-
-    // TODO: 지우기
-    private func segue(movie: Movie) {
-        selectedMovie = movie
-        showDetailView = true
     }
 }
 

@@ -35,7 +35,6 @@ class SearchViewModel: ObservableObject {
 
         movieSearchService.$searchedMovies
             .sink { [weak self] returnedMoives in
-                print(returnedMoives.count)
                 self?.searchedMovies = returnedMoives
             }
             .store(in: &cancellables)

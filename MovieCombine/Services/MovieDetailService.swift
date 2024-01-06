@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import OSLog
 
 class MovieDetailService {
     @Published var recommendations: [Movie] = []
@@ -23,7 +24,8 @@ class MovieDetailService {
     }
 
     func fetchRecommendations(for movieId: Int) {
-        print("DEBUG: Fetch Recommendations Start")
+        Logger.network.info("DEBUG: Fetch Recommendations Start")
+
         guard let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieId)/recommendations?api_key=4516ab9bf50f2aa091aeea5f2f5ca6a5") else { return }
 
         recommendationSubscription = NetworkingManager.download(url: url)
@@ -37,7 +39,8 @@ class MovieDetailService {
     }
 
     func fetchCredits(for movieId: Int) {
-        print("DEBUG: Fetch Credits Start")
+        Logger.network.info("DEBUG: Fetch Credits Start")
+
         guard let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieId)/credits?api_key=4516ab9bf50f2aa091aeea5f2f5ca6a5") else { return }
 
         creditsSubscription = NetworkingManager.download(url: url)

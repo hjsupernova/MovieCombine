@@ -7,7 +7,7 @@
 
 import Combine
 import Foundation
-
+import OSLog
 
 class NetworkingManager {
     
@@ -45,7 +45,7 @@ class NetworkingManager {
         case .finished:
             break
         case .failure(let error):
-            print(error.localizedDescription)
+            Logger.network.error("Error: \(error.localizedDescription)")
         }
     }
 

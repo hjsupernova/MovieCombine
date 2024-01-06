@@ -13,6 +13,7 @@
 		CE94FD682B49263F001CB7E6 /* MovieSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94FD672B49263F001CB7E6 /* MovieSearchService.swift */; };
 		CE94FD6B2B493D3F001CB7E6 /* MovieTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94FD6A2B493D3E001CB7E6 /* MovieTabView.swift */; };
 		CE94FD702B493D8A001CB7E6 /* MovieTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94FD6F2B493D8A001CB7E6 /* MovieTabViewModel.swift */; };
+		CE94FD752B4948A5001CB7E6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94FD742B4948A5001CB7E6 /* Logger.swift */; };
 		CEB3EC472B4001510068F4B7 /* MovieCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC462B4001510068F4B7 /* MovieCombineApp.swift */; };
 		CEB3EC492B4001510068F4B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3EC482B4001510068F4B7 /* ContentView.swift */; };
 		CEB3EC4B2B4001530068F4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB3EC4A2B4001530068F4B7 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 		CE94FD672B49263F001CB7E6 /* MovieSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchService.swift; sourceTree = "<group>"; };
 		CE94FD6A2B493D3E001CB7E6 /* MovieTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabView.swift; sourceTree = "<group>"; };
 		CE94FD6F2B493D8A001CB7E6 /* MovieTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabViewModel.swift; sourceTree = "<group>"; };
+		CE94FD722B49488D001CB7E6 /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
+		CE94FD742B4948A5001CB7E6 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CEB3EC432B4001510068F4B7 /* MovieCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3EC462B4001510068F4B7 /* MovieCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCombineApp.swift; sourceTree = "<group>"; };
 		CEB3EC482B4001510068F4B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,11 +115,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		CE94FD712B49488C001CB7E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE94FD722B49488D001CB7E6 /* OSLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEB3EC3A2B4001510068F4B7 = {
 			isa = PBXGroup;
 			children = (
 				CEB3EC452B4001510068F4B7 /* MovieCombine */,
 				CEB3EC442B4001510068F4B7 /* Products */,
+				CE94FD712B49488C001CB7E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +207,7 @@
 		CEB3EC582B40070E0068F4B7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE94FD742B4948A5001CB7E6 /* Logger.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +352,7 @@
 				CE94FD662B49254E001CB7E6 /* SearchViewModel.swift in Sources */,
 				CE94FD642B49253A001CB7E6 /* SearchView.swift in Sources */,
 				CEB3EC5E2B40088E0068F4B7 /* DiscoverView.swift in Sources */,
+				CE94FD752B4948A5001CB7E6 /* Logger.swift in Sources */,
 				CECA8F6D2B46963B008D2341 /* DetailViewModel.swift in Sources */,
 				CE65B1F92B4809AF00ED7568 /* Credits.swift in Sources */,
 				CECA8F6B2B4695FA008D2341 /* MovieDetailService.swift in Sources */,
